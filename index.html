@@ -1,0 +1,81 @@
+<! <!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+
+      label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      input {
+        display: block;
+      }
+
+      form {
+        background-color: #438D80;
+        padding: 40px 40px 40px 40px;
+      }
+
+      #button-area {
+        background-color: #99C68E;
+      }
+      .radio-inline {
+        display: inline-block;
+        margin-left: auto;
+        line-height: 1.5em;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1 id="title">Your Favourite Cake</h1>
+    <p id="description">
+      This is a survey where you can tell us about the cake you fancy.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="First name"><br>
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Your email"><br>
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+      <select id="dropdown" name="cakes">
+        <option value="Cheese-cake">Cheese Cake</option>
+        <option value="Carrot-cake">Carrot cake</option>
+        <option value="pink-champagne-cake">Pink champagne cake</option>
+        <option value="the-watergate-cake">The Watergate cake</option>
+      </select>
+
+      <br>
+      <div id="button-area">
+        <input type="radio" class="radio-inline" id="male" name="gender" value="male">male<br>
+        <input type="radio" class="radio-inline" id="female" name="gender" value="female">femal<br>
+        <input type="radio" class="radio-inline" id="other" name="gender" value="other">other
+      </div>
+      <br>
+
+      <br>
+      <div id="button-area">
+      <input type="checkbox" name="love" value="chocolate">chocolate<br>
+      <input type="checkbox" name="love" value="cheese">cheese<br>
+      <input type="checkbox" name="love" value="other">other
+      </div>
+      <br>
+
+      <textarea placeholder="Additional Comments"></textarea>
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
